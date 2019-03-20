@@ -571,6 +571,7 @@ set showcmd
 "map <C-l> :exec("tag ".expand("<cword>"))<CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+set tags=tags;
 " Setting ctags' tag file
 "set tags+=/mailplus/source/tidy-html5/tags
 "set tags+=/mailplus/source/mailcore2/tags
@@ -585,7 +586,7 @@ set tags+=/synosrc/ds.base/source/libsynocore/tags
 set tags+=/synosrc/ds.base/source/libsynoacl/tags
 map <c-l> g<c-]>
 " for ycm
-"let g:ycm_global_ycm_extra_conf = '/mailplus/source/MailClient/src/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 "let g:EclimCompletionMethod = 'omnifunci'
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_complete_in_strings = 1
