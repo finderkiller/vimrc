@@ -22,9 +22,6 @@ set ic
 set nobackup
 set noswapfile
 set diffopt+=vertical
-set background=dark
-"let g:gruvbox_italic=1
-colorscheme gruvbox
 hi SpellBad ctermfg=253 ctermbg=300
 hi SpellCap ctermfg=253 ctermbg=190
 "選擇Colorscheme
@@ -101,6 +98,9 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'morhetz/gruvbox'
 "上面幾行設定安裝的插件
 
+set background=dark
+"let g:gruvbox_italic=1
+colorscheme gruvbox
 filetype plugin indent on
 filetype plugin on
 
